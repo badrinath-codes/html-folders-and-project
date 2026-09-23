@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms - Complete Example</title>
+</head>
+
+<body>
+
+    <h1>HTML Forms</h1>
+
+    <form action="/submit" method="post">
+
+        <!-- ================= TEXT INPUTS ================= -->
+
+        <h2>1. Basic Text Inputs</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <label for="url">Website:</label>
+        <input type="url" id="url" name="url">
+        <br><br>
+
+
+        <!-- ================= NUMBER ================= -->
+
+        <h2>2. Number</h2>
+
+        <label for="age">Age:</label>
+        <input type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="100"
+            step="1">
+        <br><br>
+
+
+        <!-- ================= DATE & TIME ================= -->
+
+        <h2>3. Date & Time</h2>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month">
+        <br><br>
+
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week">
+        <br><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <label for="datetime">Date & Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime">
+        <br><br>
+
+
+        <!-- ================= RADIO BUTTON ================= -->
+
+        <h2>4. Radio Buttons</h2>
+
+        <p>Gender:</p>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+
+        <!-- ================= CHECKBOX ================= -->
+
+        <h2>5. Checkboxes</h2>
+
+        <p>Select your skills:</p>
+
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="skills" value="javascript">
+        <label for="js">JavaScript</label>
+
+        <input type="checkbox" id="python" name="skills" value="python">
+        <label for="python">Python</label>
+
+        <br><br>
+
+
+        <!-- ================= SELECT ================= -->
+
+        <h2>6. Select / Dropdown</h2>
+
+        <label for="country">Country:</label>
+
+        <select id="country" name="country">
+
+            <option value="">-- Select Country --</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- ================= MULTIPLE SELECT ================= -->
+
+        <h2>7. Multiple Select</h2>
+
+        <label for="languages">Programming Languages:</label>
+
+        <select id="languages" name="languages" multiple>
+
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- ================= TEXTAREA ================= -->
+
+        <h2>8. Textarea</h2>
+
+        <label for="message">Message:</label>
+        <br>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="Enter your message">
+        </textarea>
+
+        <br><br>
+
+
+        <!-- ================= FILE ================= -->
+
+        <h2>9. File Upload</h2>
+
+        <label for="resume">Upload Resume:</label>
+
+        <input type="file"
+            id="resume"
+            name="resume"
+            accept=".pdf,.doc,.docx">
+
+        <br><br>
+
+
+        <!-- ================= COLOR ================= -->
+
+        <h2>10. Color</h2>
+
+        <label for="color">Choose Color:</label>
+
+        <input type="color" id="color" name="color">
+
+        <br><br>
+
+
+        <!-- ================= RANGE ================= -->
+
+        <h2>11. Range</h2>
+
+        <label for="skill">Skill Level:</label>
+
+        <input type="range"
+            id="skill"
+            name="skill"
+            min="0"
+            max="100"
+            value="50">
+
+        <br><br>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <h2>12. Search</h2>
+
+        <label for="search">Search:</label>
+
+        <input type="search"
+            id="search"
+            name="search"
+            placeholder="Search here...">
+
+        <br><br>
+
+
+        <!-- ================= HIDDEN ================= -->
+
+        <h2>13. Hidden Input</h2>
+
+        <input type="hidden"
+            name="user_id"
+            value="12345">
+
+
+        <!-- ================= READONLY ================= -->
+
+        <h2>14. Readonly</h2>
+
+        <label for="college">College:</label>
+
+        <input type="text"
+            id="college"
+            name="college"
+            value="KLE Technological University"
+            readonly>
+
+        <br><br>
+
+
+        <!-- ================= DISABLED ================= -->
+
+        <h2>15. Disabled</h2>
+
+        <label for="disabled">Disabled Input:</label>
+
+        <input type="text"
+            id="disabled"
+            value="Cannot edit"
+            disabled>
+
+        <br><br>
+
+
+        <!-- ================= DATALIST ================= -->
+
+        <h2>16. Datalist</h2>
+
+        <label for="browser">Choose Browser:</label>
+
+        <input list="browsers"
+            id="browser"
+        name="browser">
+
+        <datalist id="browsers">
+
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+
+        </datalist>
+
+        <br><br>
+
+
+        <!-- ================= FIELDSET ================= -->
+
+        <h2>17. Fieldset & Legend</h2>
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+
+            <br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- ================= BUTTON TYPES ================= -->
+
+        <h2>18. Buttons</h2>
+
+        <input type="button"
+            value="Normal Button">
+
+        <input type="submit"
+            value="Submit">
+
+        <input type="reset"
+            value="Reset">
+
+        <br><br>
+
+        <button type="button">
+            Button
+        </button>
+
+        <button type="submit">
+            Submit Form
+        </button>
+
+        <button type="reset">
+            Reset Form
+        </button>
+
+
+    </form>
+
+</body>
+</html>
